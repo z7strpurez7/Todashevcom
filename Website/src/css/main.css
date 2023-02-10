@@ -1,0 +1,240 @@
+* {
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+
+/* BODY                */
+body {
+  /* #10162F; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vh;
+  background-color: #ffffff;
+  margin: 0;
+  width: 100%;
+  }
+
+
+  
+
+section {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  margin: 50px auto;
+}
+  .aboutMe{
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vh;
+    height: 100vh;
+  }
+
+  .aboutMe article{
+    z-index: 1; 
+    display: flex;
+    align-items: left center;
+    justify-content: top;
+    flex-direction: column;
+    box-shadow: 0 0 5px gray;
+    background-color: #fff;
+    padding:50px;
+    width: 50vh;
+    height: 50vh;
+    min-height: 512px;
+    min-width: 512px;
+  
+   
+    object-fit: contain;
+    box-sizing: border-box;
+
+  }
+  .aboutMe h1{
+   margin: 0;
+   margin-left: 20px;
+   font-size: 30px;
+   border-bottom: solid 2px black;
+   margin-right: 50px;
+  }
+  .aboutMe h6{
+    margin-top: 20px;
+    margin-left: 30px;
+  
+    
+   }
+  .aboutMe p{
+    padding: 0px 0px 0px 20px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    }
+
+  .aboutMe img{
+   z-index: 0; 
+  background-color: #ffffff;
+  margin-top: 20px;
+  box-shadow: 0 0 10px gray;
+  margin:0;
+  width: 50vh;
+  height: 50vh;
+  min-height: 512px;
+  min-width: 512px;
+ 
+  object-fit: contain;
+  
+
+ 
+}
+strong {
+  margin-left: 20px;
+}
+  
+.aboutMe a{
+  width: 13%;
+  margin-left: 15px;
+  border-radius: 20px;
+  border: solid rgb(71, 71, 71) 2px;
+  padding: 5px;
+}
+
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border: none;
+  padding: 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+th {
+  font-weight: bold;
+  color: white;
+  background-color: gray;
+  padding: 20px;
+  text-align: center;
+}
+ul li {
+  padding: 5px;
+}
+
+
+.filled {
+  background-color: lightblue;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content:flex-end;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  opacity: 0.8;
+  z-index: 999; 
+}
+
+.nav-left{
+   margin-right: auto;
+   font-size: 25px;
+}
+nav a {
+  display: flex;
+  align-items: center;
+
+
+  color: rgb(0, 0, 0);
+ /* background-color: #323f69;
+ */
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 15px 10px 10px 15px;
+  margin-left: 5px;
+  margin-bottom: 2;
+}
+nav a.nav-right:last-child {
+  padding-right: 20px;
+
+}
+nav a.nav-left:first-child {
+  padding-left: 20px;
+  text-decoration: underline;
+}
+
+nav a:hover {
+/* border-color: #000;  Change the border color on hover */
+  color: #5533ff;
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+nav a.active {
+  border-color: #000; /* Change the border color for the active button */
+  color: #5533ff;
+}
+
+
+/* FOOTER*/
+footer {
+  width: 100%;
+  margin: 0 0 0 0;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(143, 143, 143);
+  box-shadow: 0 0 5px gray;
+}
+
+footer p {
+  margin: 0px 10px 0px 27px;
+
+}
+
+footer a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0px 0px 0px 0px;
+  padding: 0;
+  display: flex;
+}
+
+footer li {
+  margin: 10px 0px 0px 20px;
+}
+
+ .fa-twitter,
+ 
+ .fa-github {
+  font-size: 1.5em;
+}
+.fa-bars {
+  font-size: 1.3em;
+  color: gray;
+}
+.fa-linkedin {
+  font-size: 1.5em;
+  padding-bottom: 3px;
+  color: #0072b1;
+}

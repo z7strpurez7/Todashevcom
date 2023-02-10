@@ -1,0 +1,158 @@
+* {
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+  
+  body{
+    background-color: #ffffff;
+    min-height: 100vh;
+    margin: 50px 0px auto auto;
+    color: rgb(0, 0, 0);
+  }
+  
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto;
+    color: hsla(0, 0%, 0%, 0.26);
+    width: 70%;
+    height: 100vh;
+    overflow: hidden;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+  border-image: linear-gradient(to bottom, rgb(0, 0, 0), #f90, rgb(129, 182, 30), rgb(103, 59, 204), rgb(0, 0, 0)) 1;
+  border-image-slice: 3;
+  padding: 20px;
+  
+    }
+
+
+    p {
+      color: rgb(0, 0, 0);
+      margin: 20px auto;
+      font-size: 15px;
+      line-height: 1.5;
+      width: 50%;
+    }
+    
+    img{
+        width: 25%;
+        box-shadow: 0 0 10px gray;
+    }
+
+
+  h1{
+    margin: 10px auto;
+  }
+
+    /* FOOTER AND NAV FOR PROJECT*/
+  nav {
+      display: flex;
+      justify-content:flex-end;
+      justify-content: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+      background-color: #ffffff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      opacity: 0.8;
+      z-index: 999; 
+    }
+  
+    .nav-left{
+       margin-right: auto;
+       font-size: 25px;
+    }
+    nav a {
+      display: flex;
+      align-items: center;
+    /*  border: 0px solid; /* Add a border to the buttons 
+      border-radius: 15px; /* Add rounded corners to the buttons */
+      color: rgb(0, 0, 0);
+     /* background-color: #323f69;
+     */
+      font-size: 18px;
+      font-weight: 400;
+      text-decoration: none;
+      padding: 15px 10px 10px 15px;
+      margin-left: 5px;
+      margin-bottom: 2;
+    }
+    nav a.nav-right:last-child {
+      padding-right: 20px;
+    }
+    nav a.nav-right:nth-child(2){
+        text-decoration: underline;
+    }
+    nav a.nav-left:first-child {
+      padding-left: 20px;
+  
+    }
+    
+    nav a:hover {
+  /* border-color: #000;  Change the border color on hover */
+      color: #5533ff;
+      opacity: 0.8;
+    }
+    
+    nav a.active {
+      border-color: #000; /* Change the border color for the active button */
+      color: #5533ff;
+    }
+  
+  
+  /* FOOTER*/
+    footer {
+      width: 100%;
+      margin: 0 0 0 0;
+      height: 20vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(143, 143, 143);
+      box-shadow: 0 0 5px gray;
+    }
+    footer * {
+      color: rgb(0, 0, 0);
+    }
+    
+    footer p {
+      margin: 0px 0px 0px 27px;
+    
+    }
+    
+    footer a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+    }
+    
+    footer ul {
+      list-style: none;
+      margin: 0px 10px;
+      padding: 0;
+      display: flex;
+    }
+    
+    footer li {
+      margin: 0px 0px 0px 20px;
+    }
+     .fa-twitter,
+     
+     .fa-github {
+      font-size: 1.5em;
+    }
+    .fa-bars {
+      font-size: 1.3em;
+    }
+    .fa-linkedin {
+      font-size: 1.5em;
+      padding-bottom: 3px;
+      color: #0072b1;
+    }
+    
