@@ -5,8 +5,6 @@
 
 
 
-
-
 /* BODY                */
 body {
   /* #10162F; */
@@ -20,6 +18,40 @@ body {
   width: 100%;
   }
 
+  img.hidden {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translatex(-100%);
+    transition: all 1s;
+  }
+  
+  article.hidden {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translatex(100%);
+    transition: all 1s;
+  }
+  
+  img.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translatex(0);
+  }
+  
+  article.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translatex(0);
+  }
+  
+  
+    .show:nth-child(2){
+      transition-delay: 200ms;
+    }
+    .show:nth-child(3){
+      transition-delay: 500ms;
+    }
+ 
 
   
 
@@ -27,13 +59,14 @@ section {
   background-color: #ffffff;
   width: 100%;
   height: 100%;
-  margin: 50px auto;
-     
-    object-fit: contain;
+  margin: 5vh auto;
+ object-fit: contain;
 }
+
   .aboutMe{
     margin-top: 0px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100vh;
@@ -50,13 +83,13 @@ section {
     flex-direction: column;
     box-shadow: 0 0 5px gray;
     background-color: #fff;
-    padding:50px 50px 50px 50px;
+    padding:50px 50px 0px 50px;
     width: 50vh;
     height: 50vh;
     min-height: 563px;
     min-width: 563px;
   
-   overflow: auto;
+    overflow: auto;
     object-fit: contain;
     box-sizing: border-box;
 
@@ -64,7 +97,7 @@ section {
   .aboutMe h1{
    margin: 0;
    margin-left: 20px;
-   font-size: 30px;
+   font-size: 1.5em;
    border-bottom: solid 2px black;
    margin-right: 50px;
   }
@@ -75,9 +108,9 @@ section {
     
    }
   .aboutMe p{
-    padding: 0px 0px 0px 20px;
+    padding: 0px 0px 0px 0px;
     margin-bottom: 0px;
-    font-size: 16px;
+    font-size: 1em;
     }
 
   .aboutMe img{
@@ -105,7 +138,7 @@ strong {
   margin-left: 15px;
   border-radius: 20px;
   border: solid rgb(71, 71, 71) 2px;
-  padding: 5px;
+  padding: 0px;
 }
 
 
@@ -117,7 +150,7 @@ table {
 
 td {
   border: none;
-  padding: 20px;
+  padding: px;
   text-align: center;
   vertical-align: middle;
 }
@@ -126,11 +159,11 @@ th {
   font-weight: bold;
   color: white;
   background-color: gray;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 ul li {
-  padding: 5px;
+  padding: 0px;
 }
 
 
@@ -138,6 +171,10 @@ ul li {
   background-color: lightblue;
   color: white;
 }
+
+
+/*NAAAAAV */
+
 
 nav {
   display: flex;
@@ -149,7 +186,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  height: 50px;
+  height: 5vh;
   opacity: 0.8;
   z-index: 999; 
 }

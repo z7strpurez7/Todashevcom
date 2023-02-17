@@ -7,10 +7,36 @@
   body{
     background-color: #ffffff;
     min-height: 100vh;
-    margin: 50px 0px auto auto;
+    margin: 5vh 0px auto auto;
     color: rgb(0, 0, 0);
   }
+
+  .hidden {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translatex(-50%);
+    transition: all 1.5s;
+    }
   
+    .show {
+      opacity: 1;
+      filter: blur(0);
+      transform: translatex(0);
+    }
+  
+  
+    .show:nth-child(2){
+      transition-delay: 200ms;
+    }
+    .show:nth-child(3){
+      transition-delay: 400ms;
+    }
+    .show:nth-child(4){
+      transition-delay: 600ms;
+    }
+    .show:nth-child(5){
+      transition-delay: 800ms;
+    }
   
   section {
     display: flex;
@@ -27,6 +53,7 @@
   border-image: linear-gradient(to bottom, rgb(0, 0, 0), #f90, rgb(129, 182, 30), rgb(103, 59, 204), rgb(0, 0, 0)) 1;
   border-image-slice: 3;
   padding: 20px;
+  overflow: hidden;
   
     }
 
@@ -60,7 +87,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 50px;
+      height: 5vh;
       opacity: 0.8;
       z-index: 999; 
     }
