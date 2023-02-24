@@ -34,22 +34,24 @@ body {
     }
   
     .aboutMe img{
-      width: 98%; /* Set the width to 100% to make it adjust to the container */
-      height: auto; /* Set the height to auto to maintain aspect ratio */
+      width: 98vw; /* Set the width to 100% to make it adjust to the container */
+      height: 98vw; /* Set the height to auto to maintain aspect ratio */
       border-top-right-radius: 10%;
       border-top-left-radius: 10%;
       border-bottom-left-radius: 0;
     }
     .aboutMe article{
-      width: 98%; /* Set the width to 100% to make it adjust to the container */
-      height: auto; /* Set the height to auto to maintain aspect ratio */
+      width: 98vw; /* Set the width to 100% to make it adjust to the container */
+      height: 98vw; /* Set the height to auto to maintain aspect ratio */
       padding: 0;
       border-bottom-left-radius: 10%;
       border-bottom-right-radius: 10%;
       border-top-right-radius: 0%;
     }
-
     
+    .footer {
+      display: none;
+    }
   }
 
  
@@ -208,7 +210,6 @@ footer {
   background-color: rgb(143, 143, 143);
   box-shadow: 0 0 5px gray;
   overflow: hidden;
-  
 }
 
 footer p {
