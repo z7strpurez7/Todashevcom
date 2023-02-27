@@ -1,15 +1,19 @@
 * {
     color: rgb(0, 0, 0);
     font-family: 'Courier New', Courier, monospace;
-}
 
-  
+}
+html {
+  width: 100%;
+}
   body{
+    display: flex;
+    flex-direction: column;
     background-color: #ffffff;
-    min-height: 100vh;
+    padding: 0;
+    margin: 5vh 0 0 0;
     width: 100%;
-    margin: 5vh 0px 0 0;
-    color: rgb(0, 0, 0);
+    height: 95%;
   }
 
   .hidden {
@@ -49,9 +53,7 @@
     width: 100%;
     min-height: 100vh;
     overflow: hidden;
-  padding: 20px;
-  overflow: hidden;
-  
+
     }
 
 
